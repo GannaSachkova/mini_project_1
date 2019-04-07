@@ -1,0 +1,487 @@
+/* fonts.google.com and choose reletive fonts, press "@import" - copy links*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+
+
+/* ----------------------------------------Header */
+
+
+header{
+    
+}
+
+/* ----------------------------------------Nav */
+
+.navbar {
+   margin: 0;
+    width: 100%;
+    background-color: #1C2124;
+    color: #fafafa;
+
+}
+
+.navbar-brand {
+    padding: 0px;
+    /* firefox bug fix */
+}
+
+.navbar-brand>img {
+    height: 40px;
+    width: auto;
+}
+
+ .navbar li a:hover {
+    color: #cc3e26;
+}
+
+.navbar-nav li a {
+    color: #fafafa;
+    font-weight: 400;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color:#cc3e26 ;
+    text-decoration: none;
+    background-color:  #fafafa;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+button .navbar-nav{ color: blue;
+    
+}
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    font-size: 15px;
+}
+
+/* ----------------------------------------Home */
+
+.homepage-container {
+    height: 100vh;
+    background: url(../images/ROLLING-STONES_home.jpg) no-repeat top right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* ----------------------------------------About */
+
+.about-container {
+    background-image: url(../images/Bricks-Texture-Black-Background.jpg);
+    color: #fff;
+    font-size: 20px;
+}
+
+.about-header {
+    text-align: right;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.about-p {
+    text-align: justify;
+    margin: 30px;
+}
+.leftsideimage{
+    float: left;
+}
+
+/* ----------------------------------------News */
+
+.header {
+    text-align: center;
+}
+
+.header-news {
+    text-align: right;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.news-container {
+    background-attachment: fixed;
+    background-color: #272626;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 0px;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.btn-sm:hover {
+    background-color: #CBB691;
+}
+
+
+
+/* ----------------------------------------Gallery */
+
+.gallery-container {
+     background-attachment: fixed;
+    background-image: url(../images/Bricks-Texture-Black-Background.jpg);
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 0px;
+  
+}
+
+.gallery-header {
+    text-align: right;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  display: block;
+  align-content: center;
+}
+
+div.gallery:hover {
+  border: 4px solid #cc3e26;
+  width: 350px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive columns gallery */
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*---------------------------------------------Gallery1*/
+* {
+  box-sizing: border-box;
+}
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ----------------------------------------Music */
+
+.about-container {
+  
+}
+
+.music-header {
+    text-align: right;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+
+.music-container {
+    background-color: #272626;
+    font-weight: 300;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.music-p {
+    text-align: justify;
+    margin: 30px;
+}
+.rightsideimage{
+    float: right;
+}
+
+/* ----------------------------------------Services */
+
+.services-heading {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.services-container {
+    background-image: url(../images/Bricks-Texture-Black-Background.jpg);
+    color: #fff;
+    padding-bottom: 20px;
+    
+}
+
+.services-form {
+    margin-left: 50px;
+    border: 2px solid grey;
+        padding: 30px 30px 5px 30px;
+  }
+.form-label {
+    max-width: 50%;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    height: 28px;
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+.form-control:hover {
+    border-color: #cc3e26;
+}
+
+.custom-radio{
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+ 
+.form-control-border{
+   border: 2px solid #ccc;
+    border-radius: 4px; 
+}
+
+.form-control-border:hover{
+    border-color: #cc3e26;
+}
+.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+/* ----------------------------------------Footer */
+
+footer {
+    background-color: #272626;
+    padding-top: 35px;
+    background-color: #1C2124;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.footer-links li a {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-links li a:hover {
+    color: #cc3e26;
+}
+
+.social-links {
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+
+.social-links li a i {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    padding: 12px 0;
+    line-height: 17px;
+    text-align: center;
+    font-size: 25px;
+    color: #fafafa;
+    background: #CBB691;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background-color: #cc3e26;
+}
+
+/*-------------Contact form--------*/
+.subscribe-heading {
+    font-family: "Exo", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #A71D31;
+    margin-top: 25px;
+
+}
+.bg-color-subscribe {
+    background-color: #84B582;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.subscribe-text {
+    font-size:20px;
+    color: #fafafa;
+    font-weight: bolder;
+}
+
+
+/*-------------Media queries--------*/
+
+@media (min-width:992px) {
+    .center-form {
+        padding-top: 10px;
+        max-width: 50%;
+    }
+}
+
+
+
+
+
+.button-news {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #fafafa;
+    background-color: #cc3e26;
+    border-color: #cc3e26;
+}
+
+button:hover {
+    background-color: #CBB691;
+    border-color: #CBB691;
+}
+
+
+
+/*
+.btn--cta {
+    font-weight: bold;
+    border-radius: 20px;
+    width: 90px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+}
+*/
