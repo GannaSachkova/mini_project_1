@@ -6,10 +6,6 @@
 /* ----------------------------------------Header */
 
 
-header{
-    
-}
-
 /* ----------------------------------------Nav */
 
 .navbar {
@@ -30,11 +26,13 @@ header{
     width: auto;
 }
 
- .navbar li a:hover {
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
     color: #cc3e26;
 }
 
-.navbar-nav li a {
+ 
+
+.navbar-nav .nav-link {
     color: #fafafa;
     font-weight: 400;
 }
@@ -65,7 +63,7 @@ button .navbar-nav{ color: blue;
 
 .homepage-container {
     height: 100vh;
-    background: url(../images/ROLLING-STONES_home.jpg) no-repeat top right fixed;
+    background: url(../images/rolling-stones-images-home.jpg) no-repeat top right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -83,7 +81,7 @@ button .navbar-nav{ color: blue;
 .about-header {
     text-align: right;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     font-weight: 500;
 }
@@ -105,7 +103,7 @@ button .navbar-nav{ color: blue;
 .header-news {
     text-align: right;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     font-weight: 500;
 }
@@ -122,9 +120,7 @@ button .navbar-nav{ color: blue;
     position: relative;
     font-weight: 300;
     margin-bottom: 0px;
-
 }
-
 
 * {
     box-sizing: border-box;
@@ -175,7 +171,14 @@ button .navbar-nav{ color: blue;
     background-color: #CBB691;
 }
 
-
+.column-news{
+   display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
 
 /* ----------------------------------------Gallery */
 
@@ -197,7 +200,7 @@ button .navbar-nav{ color: blue;
 .gallery-header {
     text-align: right;
     color: #fff;
-    margin-top: 50px;
+     margin-top: 100px;
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -209,11 +212,6 @@ div.gallery {
   width: 300px;
   display: block;
   align-content: center;
-}
-
-div.gallery:hover {
-  border: 4px solid #cc3e26;
-  width: 350px;
 }
 
 div.gallery img {
@@ -272,14 +270,10 @@ div.gallery img {
 
 /* ----------------------------------------Music */
 
-.about-container {
-  
-}
-
 .music-header {
     text-align: right;
     color: #fff;
-    margin-top: 50px;
+     margin-top: 100px;
     margin-bottom: 50px;
     font-weight: 500;
 }
@@ -300,12 +294,16 @@ div.gallery img {
 .rightsideimage{
     float: right;
 }
-
+.song-heading{
+    padding-top: 15px ;
+    padding-bottom: 25px;
+}
 /* ----------------------------------------Services */
 
 .services-heading {
     padding-top: 25px;
     text-align: center;
+     margin-top: 100px;
 }
 
 .services-container {
@@ -456,7 +454,7 @@ footer {
     border-color: #cc3e26;
 }
 
-button:hover {
+.button-news:hover {
     background-color: #CBB691;
     border-color: #CBB691;
 }
@@ -485,3 +483,38 @@ button:hover {
     color: white;
 }
 */
+/*-------------Modal--------*/
+.modal-header{
+   background-color: #9ee6ef;
+}
+.modal-footer{
+ background-color:#064596;
+}
+
+
+@media (min-width: $screen-sm-min) { 
+    .modal-dialog {
+        max-width: 600px;
+        width: auto;
+    }
+}
+
+@media (min-width: $screen-md-min) { 
+    .modal-dialog { 
+        max-width: 800px;
+    }
+}
+
+.modal-header-logo { 
+width: 50px;
+}
+.modal-header{
+    display: flex;
+    justify-content: flex-end;
+align-items: center;
+}
+.tittle-subscribe{
+    color: red;
+font-weight:900;
+
+}
