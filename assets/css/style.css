@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /* ----------------------------------------Header */
 
@@ -29,10 +34,17 @@ nav .bg-new{
 }
 
 
-.navbar-nav .nav-link {
+.navbar-nav .nav-link{
+   
     color: #fafafa;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: 25px;
+    
+}
+
+.navbar-collapse{
+    text-align: right;
 }
 
 h1,
@@ -65,7 +77,9 @@ h4 {
 .about-container {
     background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 1.5;
+   
 }
 
 .about-header {
@@ -80,10 +94,11 @@ h4 {
     text-align: justify;
     margin: 30px;
 }
-.leftsideimage{
-    float: left;
-}
 
+.img-img{
+    width: 550px;
+    margin: 0 35px;
+}
 /* ----------------------------------------News */
 
 .header {
@@ -180,7 +195,7 @@ margin-top: 100px;
 
 .news-all{
     color:  #fff;
-    margin:  50px 150px;
+    margin:  50px 100px 50px 150px;
     font-size: 30px; 
     font-weight: 300; 
 
@@ -200,7 +215,8 @@ margin-top: 100px;
   }
 
   img-center{
-    margin: 20px auto;
+    display: block;
+    margin: 0 auto;
   }
 
   
@@ -308,19 +324,50 @@ div.gallery img {
     font-weight: 300;
     margin-bottom: 0px;
     color: #fff;
-    font-size: 20px;
+    
 }
 
 .music-p {
     text-align: justify;
     margin: 30px;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-right: 50px;
+
 }
-.rightsideimage{
-    float: right;
-}
+
 .song-heading{
-    padding-top: 15px ;
-    padding-bottom: 25px;
+    padding-top: 100px ;
+    padding-bottom: 85px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.section-padding{
+    padding:100px 0;
+}
+.mp3-area{
+    top: 0;
+    left: 0;
+}
+.mp3-one{
+    color:#fff;
+    text-align:center;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 15px;
+}
+
+hr.style1 {
+    border-top: 2px solid #8c8b8b;
+    border-bottom: 2px solid #fff;
+    margin: 0 100px;
+}
+
+hr.style2 {
+    border-top: 2px solid #8c8b8b;
+    border-bottom: 2px solid #fff;
+    margin: 100px 700px 0 700px ;
 }
 /* ----------------------------------------Services */
 
@@ -398,7 +445,8 @@ footer {
     font-weight: 300;
     color: #fafafa;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
+  
 }
 
 .footer-links li a:hover {
@@ -408,15 +456,16 @@ footer {
 .social-links {
     padding-bottom: 15px;
     text-align: right;
+   
 }
 
 
 .social-links li a i {
-    width: 42px;
-    height: 42px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    padding: 12px 0;
-    line-height: 17px;
+    padding: 10px 0;
+    line-height: 24px;
     text-align: center;
     font-size: 25px;
     color: #fafafa;
@@ -425,6 +474,7 @@ footer {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+    margin-left: 20px;
 }
 
 .social-links li a i:hover {
