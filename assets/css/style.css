@@ -1,8 +1,7 @@
 /* fonts.google.com and choose reletive fonts, press "@import" - copy links*/
 
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,47 +9,40 @@
 
 /* ----------------------------------------Header */
 
-
 /* ----------------------------------------Nav */
 
 .navbar {
-    
-   margin: 0;
+    margin: 0;
     width: 100%;
-    background-color:#0C0C0A;
+    background-color: #0C0C0A;
     color: #fafafa;
 }
 
 .navbar-brand {
-    padding: 10px;  
+    padding: 10px;
 }
 
 .navbar-brand>img {
     height: 50px;
     width: auto;
 }
-nav .bg-new{
-   background-color:  #0C0C0A;
+
+nav .bg-new {
+    background-color: #0C0C0A;
 }
 
-
-.navbar-nav .nav-link{
-   
+.navbar-nav .nav-link {
     color: #fafafa;
     font-weight: 400;
     font-size: 25px;
     margin-left: 25px;
-    
 }
 
-.navbar-collapse{
+.navbar-collapse {
     text-align: right;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
@@ -63,13 +55,21 @@ h4 {
 
 /* ----------------------------------------Home */
 
+
+
+
+
+
 .homepage-container {
     height: 100vh;
-    background: url(../images/rolling-stones-images-home.jpg) no-repeat top right fixed;
+    background: url(../images/rolling-stones-images-home.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    width: 100vw;
+   
 }
 
 /* ----------------------------------------About */
@@ -77,17 +77,19 @@ h4 {
 .about-container {
     background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
     color: #fff;
-    font-size: 30px;
-    line-height: 1.5;
-   
+    font-size: 24px;
+    line-height: 1.6;
+    padding: 0;
 }
 
-.about-header {
+.header-header {
     text-align: right;
     color: #fff;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    padding-top: 120px;
+    padding-right: 40px;
+    margin-bottom: 20px;
     font-weight: 500;
+    font-size: 60px;
 }
 
 .about-p {
@@ -95,23 +97,17 @@ h4 {
     margin: 30px;
 }
 
-.img-img{
-    width: 550px;
-    margin: 0 35px;
+.img-img {
+    width: 500px;
+    margin: 0 35px 0 0;
 }
+
 /* ----------------------------------------News */
 
 .header {
     text-align: center;
 }
 
-.header-news {
-    text-align: right;
-    color: #fff;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    font-weight: 500;
-}
 
 .news-container {
     background-color: #1A1917;
@@ -131,8 +127,8 @@ h4 {
 
 .column {
     float: left;
-    width: 25%;
-    padding: 0 10px;
+    width: 28%;
+    padding:  14px;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -165,46 +161,43 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color:  #fff;
+    background-color: #fff;
 }
 
 .btn-sm:hover {
     background-color: #CBB691;
 }
 
-.column-news{
-   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+.column-news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
 }
 
+.news-container-1 {
+    background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
+}
 
-.news-container-1{
-    background-image: url(../images/Bricks-Texture-Black-Background1.jpg) ; 
-  }
-
-.header-news1{
-margin-top: 100px;
+.header-news1 {
+    margin-top: 100px;
     font-size: 50px;
     color: #fff;
     font-weight: 700;
-    }
-
-.news-all{
-    color:  #fff;
-    margin:  50px 100px 50px 150px;
-    font-size: 30px; 
-    font-weight: 300; 
-
 }
 
-.news1_short{
+.news-all {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.news1_short {
     font-weight: 700;
     font-size: 30px;
-
 }
 
 .responsive {
@@ -212,111 +205,41 @@ margin-top: 100px;
     width: 100%;
     max-width: 400px;
     height: auto;
-  }
+}
 
-  img-center{
+img-center {
     display: block;
     margin: 0 auto;
-  }
+}
 
-  
 /* ----------------------------------------Gallery */
 
-.gallery-container {
-     background-attachment: fixed;
-    background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
-    background-position: center;
-    background-size: cover;
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-6 {
+    float: left;
+    width: 40%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
 
-    width: 100%;
-    padding-bottom: 50px;
-    background-repeat: no-repeat;
-    position: relative;
-    font-weight: 300;
-    margin-bottom: 0px;
-  
-}
 
-.gallery-header {
-    text-align: right;
-    color: #fff;
-     margin-top: 100px;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 300px;
-  display: block;
-  align-content: center;
-}
+    .wrapper{
+        background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-/* Responsive columns gallery */
-
-@media screen and (max-width: 600px) {
-    .gallery {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
     }
-}
-
-
-/*---------------------------------------------Gallery1*/
-* {
-  box-sizing: border-box;
-}
-.gallery-row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.gallery-column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.gallery-column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .gallery-column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .gallery-column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
+   
+    .black-text{
+        color: white;
+    }
+    .carousel-item1{
+        padding-bottom: 80px;
+        margin-left: 100px;
+      
+    }
 
 /* ----------------------------------------Music */
-
-.music-header {
-    text-align: right;
-    color: #fff;
-     margin-top: 100px;
-    margin-bottom: 50px;
-    font-weight: 500;
-}
 
 
 .music-container {
@@ -324,7 +247,6 @@ div.gallery img {
     font-weight: 300;
     margin-bottom: 0px;
     color: #fff;
-    
 }
 
 .music-p {
@@ -333,69 +255,69 @@ div.gallery img {
     font-size: 30px;
     line-height: 1.7;
     margin-right: 50px;
-
 }
 
-.song-heading{
-    padding-top: 100px ;
+.song-heading {
+    padding-top: 100px;
     padding-bottom: 85px;
     text-align: center;
     font-size: 60px;
 }
 
-.section-padding{
-    padding:100px 0;
+.section-padding {
+    padding: 100px 0;
+
 }
-.mp3-area{
+
+.mp3-area {
     top: 0;
     left: 0;
 }
-.mp3-one{
-    color:#fff;
-    text-align:center;
+
+.mp3-one {
+    color: #fff;
+    text-align: center;
     font-weight: bold;
     font-size: 50px;
     margin: 15px;
 }
 
-hr.style1 {
+hr .style1 {
     border-top: 2px solid #8c8b8b;
     border-bottom: 2px solid #fff;
     margin: 0 100px;
 }
 
-hr.style2 {
+hr .style2 {
     border-top: 2px solid #8c8b8b;
     border-bottom: 2px solid #fff;
-    margin: 100px 700px 0 700px ;
+    width: 300px;
 }
+
 /* ----------------------------------------Services */
 
-.services-heading {
-    padding-top: 25px;
-    text-align: center;
-     margin-top: 100px;
-}
 
 .services-container {
     background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
     color: #fff;
     padding-bottom: 20px;
-    
 }
 
-.services-form {
-    margin-left: 50px;
-    border: 2px solid grey;
-        padding: 30px 30px 5px 30px;
-  }
-.form-label {
-    max-width: 50%;
+.center-form{
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
 }
+.services-form {
+    
+    border: 2px solid grey;
+    padding: 30px 30px 5px 30px;
+}
+
 
 .form-control {
     margin-bottom: 10px;
-    height: 28px;
+    height: 35px;
     font-size: 15px;
     padding: 3px;
     border-radius: 4px;
@@ -406,19 +328,20 @@ hr.style2 {
     border-color: #cc3e26;
 }
 
-.custom-radio{
+.custom-radio {
     margin-bottom: 10px;
     margin-left: 50px;
 }
- 
-.form-control-border{
-   border: 2px solid #ccc;
-    border-radius: 4px; 
+
+.form-control-border {
+    border: 2px solid #ccc;
+    border-radius: 4px;
 }
 
-.form-control-border:hover{
+.form-control-border:hover {
     border-color: #cc3e26;
 }
+
 .textarea {
     width: 100%;
     height: 150px;
@@ -430,10 +353,14 @@ hr.style2 {
     font-size: 16px;
     resize: none;
 }
+label{
+    font-size: 25px;
+}
+
 /* ----------------------------------------Footer */
 
 footer {
-       padding-top: 35px;
+    padding-top: 35px;
     background-color: #0C0C0A;
     color: #fafafa;
     min-height: 120px;
@@ -446,7 +373,6 @@ footer {
     color: #fafafa;
     text-decoration: none;
     font-size: 20px;
-  
 }
 
 .footer-links li a:hover {
@@ -456,9 +382,7 @@ footer {
 .social-links {
     padding-bottom: 15px;
     text-align: right;
-   
 }
-
 
 .social-links li a i {
     width: 45px;
@@ -482,15 +406,16 @@ footer {
 }
 
 /*-------------Contact form--------*/
+
 .subscribe-heading {
     font-family: "Exo", sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     color: #A71D31;
-    margin-top: 25px;
-
+    margin: 35px auto;
 }
+
 .bg-color-subscribe {
     background-color: #84B582;
 }
@@ -500,24 +425,19 @@ footer {
 }
 
 .subscribe-text {
-    font-size:20px;
+    font-size: 20px;
     color: #fafafa;
     font-weight: bolder;
 }
-
 
 /*-------------Media queries--------*/
 
 @media (min-width:992px) {
     .center-form {
         padding-top: 10px;
-        max-width: 50%;
+        max-width: 70%;
     }
 }
-
-
-
-
 
 .button-news {
     margin-top: 15px;
@@ -531,8 +451,6 @@ footer {
     background-color: #CBB691;
     border-color: #CBB691;
 }
-
-
 
 /*
 .btn--cta {
@@ -556,39 +474,44 @@ footer {
     color: white;
 }
 */
+
 /*-------------Modal--------*/
-.modal-header{
-   background-color: #9ee6ef;
-}
-.modal-footer{
- background-color:#064596;
-}
 
+.modal-header {
+    background-color: #9ee6ef;
+}$
 
-@media (min-width: $screen-sm-min) { 
+.$
+ $
+}$
+
+@$
     .modal-dialog {
         max-width: 600px;
         width: auto;
     }
 }
 
-@media (min-width: $screen-md-min) { 
-    .modal-dialog { 
+@media (min-width: $screen-md-min) {
+    .modal-dialog {
         max-width: 800px;
     }
 }
 
-.modal-header-logo { 
-width: 50px;
+.modal-header-logo {
+    width: 50px;
 }
-.modal-header{
+
+.modal-header {
     display: flex;
     justify-content: flex-end;
-align-items: center;
+    align-items: center;
 }
-.tittle-subscribe{
-    color: red;
-font-weight:900;
 
+.tittle-subscribe {
+    color: red;
+    font-weight: 900;
 }
+
 /*-------------News--------*/
+
