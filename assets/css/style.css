@@ -38,458 +38,344 @@ nav .bg-new {
     margin-left: 25px;
 }
 
-.navbar-collapse {
-    text-align: right;
-}
+ul li a:hover {
+    color: #cc3e26;}
+
+    .navbar-collapse {
+        text-align: right;
+    }
 
 h1, h2, h3, h4 {
-    margin: 0;
-}
-
-.general-sub {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    color: #fafafa;
-    font-size: 20px;
-}
-
-/* ----------------------------------------Home */
-
-
-
-
-
-
-.homepage-container {
-    height: 100vh;
-    background: url(../images/rolling-stones-images-home.jpg) no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    width: 100vw;
-   
-}
-
-/* ----------------------------------------About */
-
-.about-container {
-    background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
-    color: #fff;
-    font-size: 24px;
-    line-height: 1.6;
-    padding: 0;
-}
-
-.header-header {
-    text-align: right;
-    color: #fff;
-    padding-top: 120px;
-    padding-right: 40px;
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 60px;
-}
-
-.about-p {
-    text-align: justify;
-    margin: 30px;
-}
-
-.img-img {
-    width: 500px;
-    margin: 0 35px 0 0;
-}
-
-/* ----------------------------------------News */
-
-.header {
-    text-align: center;
-}
-
-
-.news-container {
-    background-color: #1A1917;
-    width: 100%;
-    padding-bottom: 50px;
-    background-repeat: no-repeat;
-    position: relative;
-    font-weight: 300;
-    margin-bottom: 0px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/* Float four columns side by side */
-
-.column {
-    float: left;
-    width: 28%;
-    padding:  14px;
-}
-
-/* Remove extra left and right margins, due to padding */
-
-.row {
-    margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive columns */
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
+        margin: 0;
     }
-}
-
-/* Style the counter cards */
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.btn-sm:hover {
-    background-color: #CBB691;
-}
-
-.column-news {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-}
-
-.news-container-1 {
-    background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
-}
-
-.header-news1 {
-    margin-top: 100px;
-    font-size: 50px;
-    color: #fff;
-    font-weight: 700;
-}
-
-.news-all {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.news1_short {
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.responsive {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
-
-img-center {
-    display: block;
-    margin: 0 auto;
-}
-
-/* ----------------------------------------Gallery */
-
-@media (min-width: 768px) {
-    .carousel-multi-item-2 .col-md-6 {
-    float: left;
-    width: 40%;
-    max-width: 100%; } }
-    
-    .carousel-multi-item-2 .card img {
-    border-radius: 2px; }
-
-
-
-    .wrapper{
+    /* ----------------------------------------Home */
+    .homepage-container {
+        height: 100vh;
+        background: url(../images/rolling-stones-images-home.jpg) no-repeat center top fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        width: 100vw;
+        background-color: #1A1917;
+    }
+    /* ----------------------------------------About */
+    .about-container {
         background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
-
+        color: #fff;
+        font-size: 25px;
+        line-height: 1.6;
+        padding: 0;
     }
-   
-    .black-text{
-        color: white;
+    .header-header {
+        text-align: right;
+        color: #fff;
+        padding-top: 120px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 60px;
     }
-    .carousel-item1{
+    .header-header1 {
+        text-align: center;
+        color: #fff;
+        padding-top: 120px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 60px;
+    }
+    .img-img {
+        width: 500px;
+    }
+    .img-l {
+        margin: 0 35px 0 70px;
+    }
+    hover .img-r {
+        margin: 0 70px 0 35px;
+    }
+    /* ----------------------------------------News */
+    .news-container {
+        background-color: #1A1917;
+        width: 100%;
+        padding-bottom: 50px;
+        background-repeat: no-repeat;
+        position: relative;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    /* Float four columns side by side */
+    .column {
+        float: left;
+        width: 28%;
+        padding: 14px;
+    }
+    /* Remove extra left and right margins, due to padding */
+    .row {
+        margin: 0 -5px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    /* Style the counter cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #fff;
+    }
+    .btn-sm:hover {
+        background-color: #CBB691;
+    }
+    .column-news {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .news-container-1 {
+        background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
+        color: #fff;
+        font-size: 25px;
+        line-height: 1.6;
+        padding: 0;
+    }
+    .news1_short {
+        font-weight: 600;
+        font-size: 30px;
+    }
+    /* ----------------------------------------Gallery */
+    @media (min-width: 768px) {
+        .carousel-multi-item-2 .col-md-6 {
+            float: left;
+            width: 40%;
+            max-width: 100%;
+        }
+    }
+    .carousel-multi-item-2 .card img {
+        border-radius: 2px;
+    }
+    .gallery {
+        background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
+    }
+    .carousel-item1 {
         padding-bottom: 80px;
-        margin-left: 100px;
-      
     }
 
-/* ----------------------------------------Music */
-
-
-.music-container {
-    background-color: #1A1917;
-    font-weight: 300;
-    margin-bottom: 0px;
-    color: #fff;
-}
-
-.music-p {
-    text-align: justify;
-    margin: 30px;
-    font-size: 30px;
-    line-height: 1.7;
-    margin-right: 50px;
-}
-
-.song-heading {
-    padding-top: 100px;
-    padding-bottom: 85px;
-    text-align: center;
-    font-size: 60px;
-}
-
-.section-padding {
-    padding: 100px 0;
-
-}
-
-.mp3-area {
-    top: 0;
-    left: 0;
-}
-
-.mp3-one {
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    margin: 15px;
-}
-
-hr .style1 {
-    border-top: 2px solid #8c8b8b;
-    border-bottom: 2px solid #fff;
-    margin: 0 100px;
-}
-
-hr .style2 {
-    border-top: 2px solid #8c8b8b;
-    border-bottom: 2px solid #fff;
-    width: 300px;
-}
-
-/* ----------------------------------------Services */
-
-
-.services-container {
-    background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
-    color: #fff;
-    padding-bottom: 20px;
-}
-
-.center-form{
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
-}
-.services-form {
-    
-    border: 2px solid grey;
-    padding: 30px 30px 5px 30px;
-}
-
-
-.form-control {
-    margin-bottom: 10px;
-    height: 35px;
-    font-size: 15px;
-    padding: 3px;
-    border-radius: 4px;
-    border: 2px solid #ccc;
-}
-
-.form-control:hover {
-    border-color: #cc3e26;
-}
-
-.custom-radio {
-    margin-bottom: 10px;
-    margin-left: 50px;
-}
-
-.form-control-border {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-}
-
-.form-control-border:hover {
-    border-color: #cc3e26;
-}
-
-.textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
-}
-label{
-    font-size: 25px;
-}
-
-/* ----------------------------------------Footer */
-
-footer {
-    padding-top: 35px;
-    background-color: #0C0C0A;
-    color: #fafafa;
-    min-height: 120px;
-    margin: 0;
-}
-
-.footer-links li a {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    color: #fafafa;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.footer-links li a:hover {
-    color: #cc3e26;
-}
-
-.social-links {
-    padding-bottom: 15px;
-    text-align: right;
-}
-
-.social-links li a i {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    padding: 10px 0;
-    line-height: 24px;
-    text-align: center;
-    font-size: 25px;
-    color: #fafafa;
-    background: #CBB691;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    margin-left: 20px;
-}
-
-.social-links li a i:hover {
-    background-color: #cc3e26;
-}
-
-/*-------------Contact form--------*/
-
-.subscribe-heading {
-    font-family: "Exo", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    color: #A71D31;
-    margin: 35px auto;
-}
-
-.bg-color-subscribe {
-    background-color: #84B582;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.subscribe-text {
-    font-size: 20px;
-    color: #fafafa;
-    font-weight: bolder;
-}
-
-/*-------------Media queries--------*/
-
-@media (min-width:992px) {
+    .fa-icon a {
+        text-decoration: none;
+        color: #fff;
+        width: 100;
+        height: 160px;
+        border: none;
+    }
+    .fa-icon a i {
+        color: #fff;
+        font-size: 60px;
+        margin: 20px auto;
+    }
+    /* ----------------------------------------Music */
+    .music-container {
+        background-color: #1A1917;
+        font-weight: 300;
+        margin-bottom: 0px;
+        color: #fff;
+    }
+    .p {
+        text-align: justify;
+        margin: 30px 70px;
+        font-size: 25px;
+        line-height: 1.6;
+    }
+    .song-heading {
+        padding-top: 100px;
+        padding-bottom: 85px;
+        text-align: center;
+        font-size: 50px;
+    }
+    .section-padding {
+        padding: 100px 0;
+    }
+    .mp3-area {
+        top: 0;
+        left: 0;
+    }
+    .mp3-one {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .mp3-header {
+        padding-bottom: 15px;
+    }
+    .block-divider {
+        width: 320px;
+        height: 4px;
+        border: none;
+        background-color: lightgray;
+        margin: 0 auto;
+    }
+    /* --------------------------------Services--------*/
+    .services-container {
+        background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
+        color: #fff;
+        padding-bottom: 20px;
+    }
     .center-form {
         padding-top: 10px;
+        margin: 0 auto;
         max-width: 70%;
     }
-}
-
-.button-news {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    color: #fafafa;
-    background-color: #cc3e26;
-    border-color: #cc3e26;
-}
-
-.button-news:hover {
-    background-color: #CBB691;
-    border-color: #CBB691;
-}
-
-/*
-.btn--cta {
-    font-weight: bold;
-    border-radius: 20px;
-    width: 90px;
-}
-
-.btn--red {
-    color: white;
-    background-color: #f05f40;
-    border-color: #f05f40;
-}
-
-.btn--red:hover,
-.btn--red:active,
-.btn--red:focus,
-.btn--red:active:focus {
-    background-color: #df4929;
-    border-color: #df4929;
-    color: white;
-}
-*/
-
-/*-------------Modal--------*/
-
-.modal-header {
-    background-color: #9ee6ef;
-}$
-
-.$
- $
-}$
-
-@$
-    .modal-dialog {
-        max-width: 600px;
-        width: auto;
+    .services-form {
+        border: 2px solid grey;
+        padding: 30px 30px 5px 30px;
     }
+    .heding-bookform {
+        font-size: 35px;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: right;
+        padding-bottom: 20px;
+    }
+    .form-control {
+        margin-bottom: 10px;
+        height: 35px;
+        font-size: 15px;
+        padding: 3px;
+        border-radius: 4px;
+        border: 2px solid #ccc;
+    }
+    .form-control:hover {
+        border-color: #cc3e26;
+    }
+    .custom-radio {
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    .form-control-border {
+        border: 2px solid #ccc;
+        border-radius: 4px;
+    }
+    .form-control-border:hover {
+        border-color: #cc3e26;
+    }
+    .textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+    label {
+        font-size: 25px;
+    }
+    /*-------------Subscribe form--------*/
+    .subscribe-heading {
+        font-family: "Exo", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: #A71D31;
+        margin: 35px auto;
+    }
+    .bg-color-subscribe {
+        background-color: #84B582;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .subscribe-text {
+        font-size: 20px;
+        color: #fafafa;
+        font-weight: bolder;
+    }
+    .button-news {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        color: #fafafa;
+        background-color: #cc3e26;
+        border-color: #cc3e26;
+    }
+    .button-news:hover, .button-news:active, .button-news:focus {
+        background-color: #CBB691;
+        border-color: #CBB691;
+    }
+    /* ----------------------------------------Footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: #0C0C0A;
+        color: #fafafa;
+        min-height: 110px;
+        padding-top: 35px;
+    }
+    .footer-links li a {
+        font-family: "Exo", sans-serif;
+        font-weight: 300;
+        color: #fafafa;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .footer-links li a:hover {
+        color: #cc3e26;
+    }
+    .social-links {
+        padding-bottom: 15px;
+        text-align: right;
+        padding-top: 35px;
+    }
+    .social-links li a i {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        padding: 10px 0;
+        line-height: 24px;
+        text-align: center;
+        font-size: 25px;
+        color: #fafafa;
+        background: #CBB691;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        margin-left: 15px;
+    }
+    .social-links li a i:hover {
+        background-color: #cc3e26;
+    }
+    /*-------------Modal--------*/
+    .modal-header {
+        background-color: #9ee6ef;
+    }
+    $ .$ $
+}
+
+$ @$ .modal-dialog {
+    max-width: 600px;
+    width: auto;
+}
+
 }
 
 @media (min-width: $screen-md-min) {
@@ -499,19 +385,149 @@ footer {
 }
 
 .modal-header-logo {
-    width: 50px;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 55px;
 }
 
 .tittle-subscribe {
+    text-align: center;
+    font-size: 40px;
     color: red;
-    font-weight: 900;
+    font-weight: 400;
+    padding-left: 35px;
 }
 
-/*-------------News--------*/
+.modal-p {
+    background-color: rgb(91, 224, 87);
+    font-size: 30px;
+    font-weight: 400;
+}
 
+.modal-footer {
+    background-image: url(../images/bg.png);
+}
+
+/*-------------Media queries--------*/
+
+@media only screen and (max-width: 600px) {
+    .p {
+        margin: 20px 10px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .header-header {
+        font-size: 31px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 130px;
+    }
+    .img-l, .img-r {
+        margin: 0;
+        padding-bottom: 8px;
+    }
+    .news1_short {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .homepage-container {
+        background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-color: #1A1917;
+    }
+    .social-links li a i {
+        margin-left: 0px;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .subscribe-heading {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+    .label {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .p {
+        margin: 20px 10px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .header-header {
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 120px;
+        padding-right: 30px;
+    }
+    .img-l, .img-r {
+        margin: 0;
+        padding-bottom: 8px;
+    }
+    .homepage-container {
+        background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-color: #1A1917;
+    }
+    .social-links li a i {
+        margin-left: 0px;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .subscribe-heading {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+    .label {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .p {
+        margin: 20px 10px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .header-header {
+        font-size: 35px;
+        font-weight: 400;
+        text-align: right;
+        padding-top: 120px;
+        padding-right: 30px;
+    }
+    .homepage-container {
+        background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-color: #1A1917;
+    }
+    .social-links li a i {
+        margin-left: 0px;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .subscribe-heading {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+}
