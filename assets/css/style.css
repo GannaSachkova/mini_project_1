@@ -138,7 +138,7 @@ padding: 14px;
 /* Remove extra left and right margins, due to padding */
 
 .row {
-margin: 0 -5px;
+margin: 0;
 }
 
 /* Clear floats after the columns */
