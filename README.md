@@ -28,14 +28,28 @@ This site uses the Bootstrap  features. The navbar  stays collapsed only the ext
 In the future, I would like to  create a new  additional comprehensive section “live concerts / available tickets”. I would also like to JavaScript function to create a "smooth" transition between site pages.
 
 ## Testing
-This site was tested across multiple browsers and on multiple mobile devices to ensure compatibility and responsiveness.
+The popular band achieved the intended outcome of providing  their  aficionados with a showcase of themself and their big work. 
+When the fans of the band  first upload the website  they can see on the background of this section is a photo of the band.
+In the "About" section, they can read a bit about 
+history of created of the most successful and critically acclaimed rock bands of all time.
 
+  Their enthusiasts  are able to hear and see their greatest songs  created during different period of their creation. 
 
+ In "Gallery" section the fans can view few of the pictures from their live concertos.
+In "News" section the visitors of the website can read about last band's news.
 
-All links will open in a new tab using 'target="_blank"'
+In "Booking" section they will be able in nearest future fill in the booking form. For now the submit the contact form doesn't work. I've ready only shell for it. But in future I will add some JavaScript code to  provide an error message when the user will try to send the form with an invalid email address or  if all fields won't be filled properly.   If all field are valid, the page will reload and a sender will get relative message on his monitor screen. 
+
+They are also able to view their  social media profiles via clicking on the icons in the footer. 
+
+All links will open in a new tab using 'target="_blank"' .  All links have been manually tested to ensure that they are pointing to the correct destination.
+
+This site was tested on Chrome browser  and Chrome browser mobile  mode to ensure compatibility and responsiveness. During the testing phase, I realized that background-size: cover was not compatible with mobile devices. Despite the website is responsive the screen of mobile devices cannot show all size of the main picture.  To fix this, the background-size: cover  property value was changed  on he background-size:  contain and added to the media queries.
 
 ## Deployment
-This site is hosted using GitHub pages, deployed directly from the master branch. The live site updates automatically each time there is a new push to the repository. You can git clone the code to run it locally on your machine.
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/GannaSachkova/mini_project_1.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
 
 ## Credits
