@@ -7,9 +7,7 @@
     padding: 0;
 }
 
-/* ----------------------------------------Header */
-
-/* ----------------------------------------Nav */
+/* -- Nav --*/
 
 .navbar {
     margin: 0;
@@ -50,14 +48,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-.general-sub {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    color: #fafafa;
-    font-size: 20px;
-}
-
-/* ----------------------------------------Home */
+/*-- Home --*/
 
 .homepage-container {
     height: 100vh;
@@ -70,7 +61,7 @@ h1, h2, h3, h4 {
     background-color: #1A1917;
 }
 
-/* ----------------------------------------About */
+/*--About --*/
 
 .about-container {
     background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
@@ -85,6 +76,7 @@ h1, h2, h3, h4 {
     color: #fff;
     padding-top: 120px;
     margin-bottom: 20px;
+    margin-right: 10px;
     font-weight: 500;
     font-size: 60px;
 }
@@ -110,7 +102,7 @@ h1, h2, h3, h4 {
     margin: 0 35px 15px 35px;
 }
 
-/* ----------------------------------------News */
+/* -- News --*/
 
 .news-container {
     background-color: #1A1917;
@@ -130,14 +122,6 @@ h1, h2, h3, h4 {
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-/* Float for columns side by side */
-
-/* Remove extra left and right margins, due to padding */
-
 .row {
     margin: 0;
 }
@@ -148,7 +132,6 @@ h1, h2, h3, h4 {
     clear: both;
 }
 
-/* Style the counter cards */
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -157,11 +140,7 @@ h1, h2, h3, h4 {
     background-color: #fff;
 }
 
-.btn-sm:hover {
-    background-color: #CBB691;
-}
-
-/* ----------------------------------------Gallery */
+/* --Gallery -- */
 
 @media (min-width: 768px) {
     .carousel-multi-item-2 .col-md-6 {
@@ -186,7 +165,7 @@ h1, h2, h3, h4 {
 .fa-icon a {
     text-decoration: none;
     color: #fff;
-    width: 100;
+    width: 100px;
     height: 160px;
     border: none;
 }
@@ -197,7 +176,7 @@ h1, h2, h3, h4 {
     margin: 20px auto;
 }
 
-/* ----------------------------------------Music */
+/* --Music --*/
 
 .music-container {
     background-color: #1A1917;
@@ -248,7 +227,11 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-/* --------------------------------Services--------*/
+iframe {
+    border: 0;
+}
+
+/* --Services--*/
 
 .services-container {
     background-image: url(../images/Bricks-Texture-Black-Background1.jpg);
@@ -268,7 +251,7 @@ h1, h2, h3, h4 {
     background-color: rgb(0, 0, 0, 0.5)
 }
 
-.heding-bookform {
+.heading-bookform {
     font-size: 35px;
     font-weight: 400;
     text-decoration: underline;
@@ -286,15 +269,6 @@ h1, h2, h3, h4 {
 }
 
 .form-control:hover {
-    border-color: #cc3e26;
-}
-
-.form-control-border {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-}
-
-.form-control-border:hover {
     border-color: #cc3e26;
 }
 
@@ -331,11 +305,12 @@ label {
     border-color: #CBB691;
 }
 
-/* ----------------------------------------Footer */
+/* -- Footer --*/
 
 footer {
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     background-color: #0C0C0A;
     color: #fafafa;
@@ -353,6 +328,13 @@ footer {
 
 .footer-links li a:hover {
     color: #cc3e26;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    font-size: 20px;
 }
 
 .social-links {
@@ -382,9 +364,17 @@ footer {
     background-color: #cc3e26;
 }
 
-/*-------------Media queries--------*/
+/*-- Media queries --*/
 
 @media only screen and (max-width: 600px) {
+    .homepage-container {
+        background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-color: #1A1917;
+    }
     .navbar-brand>img {
         width: 140px;
     }
@@ -399,7 +389,7 @@ footer {
         text-align: center;
         padding-top: 130px;
     }
-    .song-heading {        
+    .song-heading {
         font-size: 35px;
     }
     .img-l {
@@ -410,36 +400,23 @@ footer {
         margin: 0;
         padding-bottom: 8px;
     }
-    .news1_short {
-        font-weight: 600;
-        font-size: 20px;
-    }
-    .homepage-container {
-        background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-        background-color: #1A1917;
-    }
     .container-fluid {
         padding: 0;
     }
-    .form-control{ font-size: 12px;
+    .form-control {
+        font-size: 12px;
     }
-    .services-form .col{
+    .services-form .col {
         position: relative;
         padding: 0;
-        width: 100%; 
+        width: 100%;
     }
-    .heding-bookform {
+    .heading-bookform {
         font-size: 25px;
     }
-
     label {
         font-size: 20px;
     }
-
     .social-links {
         padding-bottom: 15px;
         text-align: center;
@@ -450,21 +427,26 @@ footer {
         justify-content: center;
         padding-left: 0;
     }
-
     .label {
         font-size: 10px;
     }
-
     audio {
         width: 220px;
     }
-
     .block-divider {
         width: 250px;
     }
 }
-
+/* -- Media queries --*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .homepage-container {
+        background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-color: #1A1917;
+    }
     .p {
         margin: 20px 10px;
         font-size: 20px;
@@ -477,21 +459,12 @@ footer {
         padding-top: 120px;
         padding-right: 30px;
     }
-    .song-heading {        
+    .song-heading {
         font-size: 35px;
     }
-
     .img-l, .img-r {
         margin: 0;
         padding-bottom: 8px;
-    }
-    .homepage-container {
-        background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-        background-color: #1A1917;
     }
     .social-links li a i {
         margin-left: 0px;
@@ -508,7 +481,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px){
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .homepage-container {
         background: url(../images/rolling-stones-images-home.jpg) no-repeat center center fixed;
         -webkit-background-size: contain;
@@ -529,7 +502,7 @@ footer {
         padding-top: 120px;
         padding-right: 30px;
     }
-    .song-heading {        
+    .song-heading {
         font-size: 35px;
     }
     .social-links li a i {
